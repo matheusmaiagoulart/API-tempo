@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="/JS/scripts.js" defer></script>
+</head>
+
+<body id="fnd">
+    <style>
+        #fnd{
+            background-image: url(/IMG/wpp.ceu.jpeg);
+        }
+    </style>
+   
+    <div class="container">
+
+        <div class="search">
+            <input type="text" placeholder="Buscar cidade:" class="buscar-input" id="buscar-input">
+            <button class="buscar-btn" id="buscar-btn">
+                <svg class="img-lupa" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg></button>
+        </div>
+    
+          <div class="container-infos-cidade">
+            <h2 id="cidade"> São Bernardo do Campo</h2>
+            <p id="temp">20°</p>
+        </div>
+
+        <div class="container-widget">
+            <img class="img-tempo" src="https://openweathermap.org/img/wn/04n.png" alt=""> <p class="situacao" id="situacao" >Nublado</p>
+        </div>
+        <div class="minmax">
+        <p >Máx: <span id="max-temp">27°</span> | Min: <span id="min-temp">19° </span> </p>
+        </div>
+    </div>
+
+</body>
+</html>
